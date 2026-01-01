@@ -9,6 +9,34 @@
     />
     <title>Simply Chocolate</title>
 
+    <!-- to improve LCP -->
+    <link
+      rel="preload"
+      as="image"
+      href="./images/bg-img/hero-bg_mob@1x.webp"
+      imagesrcset="./images/bg-img/hero-bg_mob@1x.webp 1x, ./images/bg-img/hero-bg_mob@2x.webp 2x"
+      media="(max-width: 767px)"
+      fetchpriority="high"
+    />
+
+    <link
+      rel="preload"
+      as="image"
+      href="./images/bg-img/hero-bg_tab@1x.webp"
+      imagesrcset="./images/bg-img/hero-bg_tab@1x.webp 1x, ./images/bg-img/hero-bg_tab@2x.webp 2x"
+      media="(min-width: 768px) and (max-width: 1439px)"
+      fetchpriority="high"
+    />
+
+    <link
+      rel="preload"
+      as="image"
+      href="./images/bg-img/hero-bg.webp"
+      imagesrcset="./images/bg-img/hero-bg.webp 1x, ./images/bg-img/hero-bg@2x.webp 2x"
+      media="(min-width: 1440px)"
+      fetchpriority="high"
+    />
+
     <!-- css -->
     <link rel="stylesheet" href="css/styles.css" />
 
