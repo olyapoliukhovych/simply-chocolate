@@ -248,14 +248,28 @@ ol {
 /* ========== /PAGE HEADER ========== */
 
 /* ========== HERO SECTION ========== */
-
+/* bg mob */
 .hero-section {
   background: rgba(17, 17, 17, 0.7);
+  /* for very old browsers */
   background-image: linear-gradient(
       rgba(17, 17, 17, 0.4),
       rgba(17, 17, 17, 0.4)
     ),
     url(../images/bg-img/hero-bg_mob@1x.jpg);
+
+  /* modern approach */
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    image-set(
+      url('../images/bg-img/hero-bg_mob@1x.webp') 1x,
+      url('../images/bg-img/hero-bg_mob@2x.webp') 2x,
+      url('../images/bg-img/hero-bg_mob@1x.jpg') 1x,
+      url('../images/bg-img/hero-bg_mob@2x.jpg') 2x
+    );
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -265,16 +279,7 @@ ol {
   margin-bottom: 80px;
 }
 
-@media (min-resolution: 192dpi) {
-  .hero-section {
-    background-image: linear-gradient(
-        rgba(17, 17, 17, 0.4),
-        rgba(17, 17, 17, 0.4)
-      ),
-      url('../images/bg-img/hero-bg_mob@2x.jpg');
-  }
-}
-
+/* bg tab */
 @media only screen and (min-width: 768px) {
   .hero-section {
     margin-bottom: 40px;
@@ -283,19 +288,21 @@ ol {
         rgba(17, 17, 17, 0.4)
       ),
       url('../images/bg-img/hero-bg_tab@1x.jpg');
-  }
-}
 
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
-  .hero-section {
     background-image: linear-gradient(
         rgba(17, 17, 17, 0.4),
         rgba(17, 17, 17, 0.4)
       ),
-      url('../images/bg-img/hero-bg_tab@2x.jpg');
+      image-set(
+        url('../images/bg-img/hero-bg_tab@1x.webp') 1x,
+        url('../images/bg-img/hero-bg_tab@2x.webp') 2x,
+        url('../images/bg-img/hero-bg_tab@1x.jpg') 1x,
+        url('../images/bg-img/hero-bg_tab@2x.jpg') 2x
+      );
   }
 }
 
+/* bg desktop */
 @media only screen and (min-width: 1440px) {
   .hero-section {
     margin-bottom: 80px;
@@ -304,16 +311,17 @@ ol {
         rgba(17, 17, 17, 0.4)
       ),
       url('../images/bg-img/hero-bg.jpg');
-  }
-}
 
-@media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
-  .hero-section {
     background-image: linear-gradient(
         rgba(17, 17, 17, 0.4),
         rgba(17, 17, 17, 0.4)
       ),
-      url('../images/bg-img/hero-bg@2x.jpg');
+      image-set(
+        url('../images/bg-img/hero-bg.webp') 1x,
+        url('../images/bg-img/hero-bg@2x.webp') 2x,
+        url('../images/bg-img/hero-bg.jpg') 1x,
+        url('../images/bg-img/hero-bg@2x.jpg') 2x
+      );
   }
 }
 
