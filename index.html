@@ -46,14 +46,14 @@
       fetchpriority="high"
     />
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/styles.css" />
-
     <!-- modern normalize -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
     />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
@@ -595,7 +595,7 @@
                 ./images/how-its-made/image_tab.webp    1x,
                 ./images/how-its-made/image_tab@2x.webp 2x
               "
-              media="(min-width: 768px) and (max-width: 1439px)"
+              media="(min-width: 768px)"
               type="image/webp"
             />
             <source
@@ -603,7 +603,7 @@
                 ./images/how-its-made/image_tab.jpg    1x,
                 ./images/how-its-made/image_tab@2x.jpg 2x
               "
-              media="(min-width: 768px) and (max-width: 1439px)"
+              media="(min-width: 768px)"
             />
             <!-- Mobile -->
             <source
@@ -611,7 +611,6 @@
                 ./images/how-its-made/image_mob.webp    1x,
                 ./images/how-its-made/image_mob@2x.webp 2x
               "
-              media="(max-width: 767px)"
               type="image/webp"
             />
             <img
@@ -619,6 +618,8 @@
               src="./images/how-its-made/image_mob.jpg"
               srcset="./images/how-its-made/image_mob@2x.jpg 2x"
               alt="how it's made process"
+              width="586"
+              height="875"
               loading="lazy"
             />
           </picture>
